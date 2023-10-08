@@ -88,9 +88,14 @@ int is_final(Node* n){
      for(i=0;i<9;i++){
        int valor = n->sudo[i][j];
        if(valor!=0){
-         
+         if(marca[valor]==1) return 0;
+         marca[valor]=1;
        }
      }
+  }
+
+  for(k=0;k<10;k++){
+    
   }
   
   return 0;

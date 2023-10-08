@@ -16,3 +16,14 @@ sudoku.c:54:7: error: unused variable ‘sudo’ [-Werror=unused-variable]
 cc1: all warnings being treated as errors
 Compilation failed
 9757ddc
+Sun 08 Oct 2023 06:34:58 PM UTC: 
+ sudoku.c | 9 ++++++++-
+ 1 file changed, 8 insertions(+), 1 deletion(-)
+In file included from test.c:5:
+sudoku.c: In function ‘get_adj_nodes’:
+sudoku.c:54:11: error: unused variable ‘k’ [-Werror=unused-variable]
+   54 |   int i,j,k;
+      |           ^
+cc1: all warnings being treated as errors
+Compilation failed
+263a530

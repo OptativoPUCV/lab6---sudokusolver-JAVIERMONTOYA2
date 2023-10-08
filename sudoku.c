@@ -94,7 +94,9 @@ List* get_adj_nodes(Node* n){
           Node* copiaN = copy(n);
           copiaN->sudo[i][j]=k;
           if(is_valid(copiaN)==1){
-            pushBack(list, copyN);
+            pushBack(list, copiaN);
+          }else{
+            free(copiaN);
           }
         }
         break;

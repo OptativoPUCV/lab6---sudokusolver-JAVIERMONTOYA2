@@ -281,3 +281,9 @@ sudoku.c:97:28: error: ‘copyN’ undeclared (first use in this function); did 
 sudoku.c:97:28: note: each undeclared identifier is reported only once for each function it appears in
 Compilation failed
 86977d1
+Sun 08 Oct 2023 07:04:54 PM UTC: 
+ sudoku.c | 4 +++-
+ 1 file changed, 3 insertions(+), 1 deletion(-)
+ tests:  6|2
+total_score: 45/70
+4459e1e

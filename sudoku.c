@@ -60,9 +60,10 @@ List* get_adj_nodes(Node* n){
           copiaN->sudo[i][j]=k;
           pushBack(list, copiaN);
       }
+        break;
     }
   }
-  
+  if(j<9) break;
   return list;
 }
 

@@ -137,11 +137,10 @@ Node* DFS(Node* initial, int* cont){
     while(aux!=NULL){
       push(pila, aux);
       aux = next(adjuntos);
-      free(actual);
     }
     
   }
-  
+  free(actual);
   
   return NULL;
 }

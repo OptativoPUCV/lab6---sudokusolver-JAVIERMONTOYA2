@@ -93,7 +93,7 @@ List* get_adj_nodes(Node* n){
         for(k=1;k<=9;k++){
           Node* copiaN = copy(n);
           copiaN->sudo[i][j]=k;
-          pushBack(list, copiaN);
+          
         }
         break;
       }

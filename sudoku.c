@@ -123,6 +123,17 @@ Node* DFS(Node* initial, int* cont){
   Stack* pila = createStack();
   push(pila, initial);
   *cont=0;
+
+  while(!is_empty(pila)){
+    (*cont)++;
+    Node* actual = top(pila);
+    if(is_final(actual)){
+      return actual;
+    }
+
+    List* adjuntos = get_adj_nodes(actual);
+    Node* aux =
+  }
   
   
   return NULL;

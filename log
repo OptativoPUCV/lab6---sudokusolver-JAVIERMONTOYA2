@@ -360,3 +360,18 @@ test.c:7:8: error: ‘_strdup’ defined but not used [-Werror=unused-function]
 cc1: all warnings being treated as errors
 Compilation failed
 d81bdfc
+Sun 08 Oct 2023 07:45:22 PM UTC: 
+ sudoku.c | 5 ++++-
+ 1 file changed, 4 insertions(+), 1 deletion(-)
+In file included from test.c:5:
+sudoku.c: In function ‘DFS’:
+sudoku.c:136:11: error: ‘aux’ undeclared (first use in this function)
+  136 |     while(aux!=NULL){
+      |           ^~~
+sudoku.c:136:11: note: each undeclared identifier is reported only once for each function it appears in
+sudoku.c:134:11: error: unused variable ‘adjuntos’ [-Werror=unused-variable]
+  134 |     List* adjuntos = get_adj_nodes(actual);
+      |           ^~~~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+3ce6922

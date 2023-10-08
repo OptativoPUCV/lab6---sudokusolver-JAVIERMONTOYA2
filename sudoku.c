@@ -125,10 +125,10 @@ Node* DFS(Node* initial, int* cont){
   push(pila, initial);
   *cont=0;
 
-  while(!is_empty(pila)){
+  while(is_empty(pila)==0){
     (*cont)++;
     Node* actual = top(pila);
-    if(is_final(actual)){
+    if(is_final(actual)==1){
       return actual;
     }
     

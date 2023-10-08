@@ -293,3 +293,27 @@ Sun 08 Oct 2023 07:11:34 PM UTC:
  tests:  7|1
 total_score: 55/70
 4b5b95c
+Sun 08 Oct 2023 07:20:52 PM UTC: 
+ sudoku.c | 8 ++++++++
+ 1 file changed, 8 insertions(+)
+In file included from test.c:5:
+sudoku.c: In function ‘DFS’:
+sudoku.c:128:24: error: passing argument 1 of ‘pop’ from incompatible pointer type [-Werror=incompatible-pointer-types]
+  128 |     Node* actual = pop(&pila);
+      |                        ^~~~~
+      |                        |
+      |                        Stack ** {aka List **}
+In file included from test.c:4:
+list.h:31:17: note: expected ‘Stack *’ {aka ‘List *’} but argument is of type ‘Stack **’ {aka ‘List **’}
+   31 | void pop(Stack* s);
+      |          ~~~~~~~^
+In file included from test.c:5:
+sudoku.c:128:20: error: void value not ignored as it ought to be
+  128 |     Node* actual = pop(&pila);
+      |                    ^~~
+sudoku.c:128:11: error: unused variable ‘actual’ [-Werror=unused-variable]
+  128 |     Node* actual = pop(&pila);
+      |           ^~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+6e4f6e1

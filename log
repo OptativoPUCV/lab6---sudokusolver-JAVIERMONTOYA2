@@ -375,3 +375,8 @@ sudoku.c:134:11: error: unused variable ‘adjuntos’ [-Werror=unused-variable]
 cc1: all warnings being treated as errors
 Compilation failed
 3ce6922
+Sun 08 Oct 2023 07:46:19 PM UTC: 
+ sudoku.c | 4 +++-
+ 1 file changed, 3 insertions(+), 1 deletion(-)
+ tests:  0|0
+668a110

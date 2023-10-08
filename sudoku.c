@@ -132,10 +132,12 @@ Node* DFS(Node* initial, int* cont){
     }
 
     List* adjuntos = get_adj_nodes(actual);
-
+    Node* aux = first(adjuntos);
     while(aux!=NULL){
       push(pila, aux);
+      aux = next(adjuntos);
     }
+    free(actual);
   }
   
   

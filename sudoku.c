@@ -135,12 +135,12 @@ Node* DFS(Node* initial, int* cont){
     List* adjuntos = get_adj_nodes(actual);
     Node* aux = first(adjuntos);
     while(aux!=NULL){
-      push(pila, aux);
+      Node* copia = createNode();
+      push(pila, copia);
       aux = next(adjuntos);
     }
-    
+    free(actual);
   }
-  free(actual);
   
   return NULL;
 }

@@ -130,3 +130,20 @@ sudoku.c:73:7: error: unused variable ‘i’ [-Werror=unused-variable]
 cc1: all warnings being treated as errors
 Compilation failed
 7e3f2eb
+Sun 08 Oct 2023 06:43:47 PM UTC: 
+ sudoku.c | 4 ++++
+ 1 file changed, 4 insertions(+)
+In file included from test.c:5:
+sudoku.c: In function ‘is_final’:
+sudoku.c:74:7: error: variable ‘marca’ set but not used [-Werror=unused-but-set-variable]
+   74 |   int marca[10];
+      |       ^~~~~
+sudoku.c:73:13: error: unused variable ‘p’ [-Werror=unused-variable]
+   73 |   int i,j,k,p;
+      |             ^
+sudoku.c:73:9: error: unused variable ‘j’ [-Werror=unused-variable]
+   73 |   int i,j,k,p;
+      |         ^
+cc1: all warnings being treated as errors
+Compilation failed
+4b97f16

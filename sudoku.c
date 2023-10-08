@@ -71,7 +71,11 @@ List* get_adj_nodes(Node* n){
 
 int is_final(Node* n){
   int i,j,k,p;
-  
+  int marca[10];
+  for(i=0;i<9;i++){
+    for(k=0;k<10;k++) marca[k]=0;
+    
+  }
   
   
   return 0;

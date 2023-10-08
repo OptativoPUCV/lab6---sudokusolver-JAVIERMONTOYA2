@@ -95,7 +95,7 @@ int is_final(Node* n){
   }
 
   for(k=0;k<10;k++){
-    
+    for(j=0;j<0;j++) marca[p]=0;
   }
   
   return 0;

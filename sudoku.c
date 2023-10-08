@@ -51,6 +51,7 @@ int is_valid(Node* n){
     for(j=0;j<9;j++){
       int valor = n->sudo[i][j];
       if(valor!=0){
+        if(valor<0 || valor>9) return 0;
         if(marca[valor]==1) return 0;
         marca[valor]=1;
       }

@@ -269,3 +269,15 @@ Sun 08 Oct 2023 07:03:21 PM UTC:
  tests:  3|4
 total_score: 20/70
 9c7beb4
+Sun 08 Oct 2023 07:04:27 PM UTC: 
+ sudoku.c | 4 +++-
+ 1 file changed, 3 insertions(+), 1 deletion(-)
+In file included from test.c:5:
+sudoku.c: In function ‘get_adj_nodes’:
+sudoku.c:97:28: error: ‘copyN’ undeclared (first use in this function); did you mean ‘copy’?
+   97 |             pushBack(list, copyN);
+      |                            ^~~~~
+      |                            copy
+sudoku.c:97:28: note: each undeclared identifier is reported only once for each function it appears in
+Compilation failed
+86977d1

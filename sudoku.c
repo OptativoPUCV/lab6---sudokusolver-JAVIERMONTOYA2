@@ -94,8 +94,17 @@ int is_final(Node* n){
      }
   }
 
-  for(k=0;k<10;k++){
-    for(j=0;j<0;j++) marca[p]=0;
+  for(k=0;k<9;k++){
+    for(p=0;p<10;p++) marca[p]=0;
+    for(p=0;p<9;p++){{
+      int i=3*(k/3)+p/3;
+      int j=3*(k%3)+p%3;
+      int valor = n->sudo[i][j];
+      if(valor!=0){
+        if(marca[valor]==1) return 0;
+        marca[valor]=1;
+      }
+    }
   }
   
   return 0;

@@ -128,6 +128,7 @@ Node* DFS(Node* initial, int* cont){
   while(is_empty(pila)==0){
     (*cont)++;
     Node* actual = top(pila);
+    pop(pila);
     if(is_final(actual)==1){
       return actual;
     }
@@ -140,7 +141,6 @@ Node* DFS(Node* initial, int* cont){
     }
     free(actual);
   }
-  
   return NULL;
 }
 
